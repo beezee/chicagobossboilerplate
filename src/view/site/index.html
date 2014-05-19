@@ -1,0 +1,32 @@
+{% extends "site/layout.html" %}
+
+{% block body %}
+  <div class="jumbotron">
+    <h1>Booking management made easy</h1>
+  </div>
+
+  <div class="row marketing">
+    <div class="col-lg-6">
+      <h4>Login</h4>
+      <form method="post" action="/login" class="form-signin" role="form">
+        <input name="email" type="email" class="form-control" placeholder="Email address" required autofocus>
+        <input name="password" type="password" class="form-control" placeholder="Password" required>
+        <br />
+        <button style="margin-top:34px;" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div>
+
+    <div class="col-lg-6">
+      <h4>Signup</h4>
+      <form method="post" action="/signup" class="form-signin" role="form">
+        <input name="email" type="email" class="form-control" placeholder="Email address" required autofocus>
+        <input name="password" type="password" class="form-control" placeholder="Password" required>
+        <input name="confirm_password" type="password" class="form-control" placeholder="Confirm Password" required> 
+        <br />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
